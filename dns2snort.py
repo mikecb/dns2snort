@@ -71,7 +71,7 @@ elif args.sid > 2000000:
 #fout is the file we will be outputting our rules to.
 #f is the file we will read a list of domains from.
 #This script iterates through each line (via for line loop) and splits on periods (.), creating a list for each line.
-#The script calculates the segments of the domain in question (can handle 1-4 segments -- e.g. .ru (1 segments, TLD) all the way to this.is.evil.ru (4 segments))
+#The script calculates the segments of the domain in question.
 #Each segment of a domain has it's string length calculated and converted to hex.
 #If the segment is less than or equal to 0xf, this is converted to "0f" (padded with a zero, since snort rules expect this)
 #The hexidecmal letter is converted to upper case, and the rule is written to a file.
